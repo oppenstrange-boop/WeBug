@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <style>
+    :root{--bg:#f7f7f9;--card:#fff;--accent:#0066cc;--muted:#666}
+    *{box-sizing:border-box}body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;color:#111;margin:0;background:var(--bg)}
+    header{background:linear-gradient(90deg,#ffffffcc,var(--bg));padding:40px 20px;border-bottom:1px solid #e6e6e9}
+    .container{max-width:980px;margin:0 auto;padding:24px}
+    .hero{display:flex;gap:24px;align-items:center}
+    .avatar{width:110px;height:110px;border-radius:12px;background:#ddd;flex:0 0 110px;display:flex;align-items:center;justify-content:center;color:#999;font-weight:700}
+    h1{margin:0;font-size:1.6rem}
+    p.lead{margin:6px 0;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:22px}
+    .card{background:var(--card);padding:16px;border-radius:10px;box-shadow:0 1px 2px rgba(15,15,20,0.04);border:1px solid #eef0f2}
+    .project-title{font-weight:600;margin:0 0 8px 0}
+    footer{padding:28px 0;color:var(--muted);text-align:center;font-size:0.9rem}
+    a.btn{display:inline-block;padding:8px 12px;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none}
+    @media (max-width:640px){.hero{flex-direction:column;align-items:flex-start}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container hero">
+      <div class="avatar">YN</div>
+      <div>
+        <h1>Your Name</h1>
+        <p class="lead">Developer • Debugging enthusiast • Open-source contributor</p>
+        <p><a class="btn" href="#projects">View projects</a> <a class="btn" href="#contact" style="background:#444">Contact</a></p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="card" style="margin-top:18px">
+      <h2 style="margin-top:0">About</h2>
+      <p class="lead" style="margin:0">Short intro about you and the WeBug project. Replace this text with a one-paragraph bio describing your skills and goals.</p>
+    </section>
+
+    <section id="projects" style="margin-top:18px">
+      <h2 style="margin-bottom:12px">Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="project-title">WeBug</div>
+          <p style="margin:6px 0;color:var(--muted)">A lightweight debugger — brief description and features. <a href="https://github.com/oppenstrange-boop/WeBug" target="_blank">Repo</a></p>
+        </div>
+
+        <div class="card">
+          <div class="project-title">Project Two</div>
+          <p style="margin:6px 0;color:var(--muted)">Short description of another project — add links and tech stack.</p>
+        </div>
+
+        <div class="card">
+          <div class="project-title">Project Three</div>
+          <p style="margin:6px 0;color:var(--muted)">Another brief project summary.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:18px">
+      <div class="card">
+        <h2 style="margin-top:0">Contact</h2>
+        <p style="margin:6px 0;color:var(--muted)">Email: you@example.com</p>
+        <p style="margin:6px 0;color:var(--muted)">Links: <a href="https://github.com/oppenstrange-boop" target="_blank">GitHub</a> • <a href="#" target="_blank">LinkedIn</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">Built with ❤️ — customize this portfolio and deploy it with GitHub Pages.</div>
+  </footer>
+</body>
+</html>
